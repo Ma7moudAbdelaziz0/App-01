@@ -57,8 +57,14 @@ namespace firstApp
 
             #region Q06
             //Declare a double price = 49.99; then convert it into an int using a cast.
-            double price = 49.99;
-            int priceWithInt = (int)price;//49
+            //double price = 49.99;
+            //int priceWithInt = (int)price;//49
+            #endregion
+
+            #region Q07
+            //Given string pagesText = "464";, convert it into an int using the Convert class.
+            string pagesText = "464";
+            int pageTextWithInt=Convert.ToInt32(pagesText);
             #endregion
         }
     }
