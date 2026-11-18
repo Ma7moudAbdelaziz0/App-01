@@ -50,9 +50,15 @@ namespace firstApp
 
             #region Q05
             //Declare an int pages = 300; then store it in a double variable without using a cast.
-            int pages = 300;
-            double pagesWithDouble = 300;//300.0
-           
+            //int pages = 300;
+            //double pagesWithDouble = 300;//300.0
+
+            #endregion
+
+            #region Q06
+            //Declare a double price = 49.99; then convert it into an int using a cast.
+            double price = 49.99;
+            int priceWithInt = (int)price;//49
             #endregion
         }
     }
