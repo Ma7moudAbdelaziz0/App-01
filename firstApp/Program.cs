@@ -11,26 +11,41 @@ namespace firstApp
             #region Q01
             // Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in a
             // variable of type object.Print it.
-            Book book = new Book();
-            book.Title = "c# Basics";
-            book.Pages = 50;
-            object obj = book;
-            Console.WriteLine(obj);
+            //Book book = new Book();
+            //book.Title = "c# Basics";
+            //book.Pages = 50;
+            //object obj = book;
+            //Console.WriteLine(obj);
             #endregion
 
             #region Q02
             //Using the Book class above, print the result of calling ToString(), Equals() (compare book with
             //itself), GetHashCode(), and GetType() on book
-            Console.WriteLine(obj.ToString());
-            Console.WriteLine(obj.Equals(obj));//in this case compare with value 
-            Console.WriteLine(obj.GetHashCode());
-            Console.WriteLine(obj.GetType());
+            //Console.WriteLine(obj.ToString());
+            //Console.WriteLine(obj.Equals(obj));//in this case compare with value 
+            //Console.WriteLine(obj.GetHashCode());
+            //Console.WriteLine(obj.GetType());
             #endregion
 
             #region Q03
             //Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
             //int pages = "464";
 
+            #endregion
+
+            #region Q04
+            //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+            //zero", and then prints "Done" in a finally block.
+            try
+            {
+                int x = 10;
+                Console.WriteLine(x / 0);
+            }
+            catch (Exception ex)//divide by zero exception
+            {
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally { Console.WriteLine("Done"); }
             #endregion
         }
     }
