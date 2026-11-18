@@ -72,15 +72,23 @@ namespace firstApp
             #region Q08
             //Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
             //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
-            string yearText= "2023";
-            int yearTextWithInt=int.Parse(yearText);
-            string badText = "abc";
-            int.TryParse(badText, out int badTexrWithInt);
-            if (badTexrWithInt == 0)
-            {
-                Console.WriteLine("Invalid number");
-            }
+            //string yearText= "2023";
+            //int yearTextWithInt=int.Parse(yearText);
+            //string badText = "abc";
+            //int.TryParse(badText, out int badTexrWithInt);
+            //if (badTexrWithInt == 0)
+            //{
+            //    Console.WriteLine("Invalid number");
+            //}
 
+            #endregion
+
+            #region Q09
+            // Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
+            //to prove it's now a string.
+            int pages = 464;
+            string pagesWithString = pages.ToString();
+            Console.WriteLine(pagesWithString.GetType());//system.string
             #endregion
         }
     }
