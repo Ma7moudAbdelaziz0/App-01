@@ -26,6 +26,12 @@ namespace firstApp
             Console.WriteLine(obj.GetHashCode());
             Console.WriteLine(obj.GetType());
             #endregion
+
+            #region Q03
+            //Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+            //int pages = "464";
+
+            #endregion
         }
     }
 }
